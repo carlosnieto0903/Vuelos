@@ -1,0 +1,101 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>Acceso Usuario</title>
+		<link rel="stylesheet" type="text/css" href="../src/style.css">
+		<link rel="shorcut icon" type="text/css" href="img/naranja.ico">
+</head>
+<body>
+	<font face="Comic Sans MS" size="4">
+		<center>
+			<div id="Contenedor">
+				<div id="Portal">
+					<style type="text/css">
+						#Portal{
+							background-color: #EC5772;
+						}
+					</style>
+					<font face="Comic Sans MS" size="6"><h1>RESERVA VUELOS</h1></div></font>
+				<div id="Menu">
+					<ul>
+							<style type="text/css">
+								#Menu ul li a{
+									text-decoration: none;
+									color: #EC5772;
+								}
+								#Menu ul li a:hover{
+									background-color: #EC5772;
+									color: #44535C;
+								}
+							</style>
+						<li><a href="../inicio.html">REGRESAR INICIO</a></li>
+					</ul>
+				</div>
+				<div id="Formulario">
+					<div id="uno">
+						<style type="text/css">
+							#uno{
+								position: absolute;
+								width: 45%;
+								height: 75%;
+								margin-top: 20px;
+								margin-left: 1em;
+							}
+							form{
+								background:#EC5772;
+								width: 65%;
+								height: 32%;
+								margin: top;
+								padding: 5px;
+								border-radius: 1.5em;
+								
+							}
+							input[type="submit"]{
+								color: #EC5772;
+							}
+						</style>
+						<font size="7" color="#EC5772">ACCESO PASAJERO</font><br>
+						<img src="../src/img/usuario1.png" width="40%" height="45%" align="center"><br><br>
+						<form action="../src/php/pasajero.php" method="POST"><br>
+							
+							<input type="text" placeholder="&#128272; CORREO" name="correo" required="true"><br>
+							<input type="password" placeholder="&#128272; CONTRASEÑA" name="contra" required="true"><br>
+							<input type="submit" value="INGRESAR">
+						</form>
+					</div>
+					<div id="dos">
+						<style type="text/css">
+							#dos{
+								float: right;
+								margin-top: 20px;
+								margin-right: 1em;
+								width: 45%;
+								height: 75%;
+								background-color: #44535C;
+							}
+							input{
+								font-size: 12.5px;
+							}
+							/*#uform{
+								height: 80%;
+							}*/
+						</style>
+						<font size="6" color="#EC5772">REGISTRARSE</font>
+						<form action="../src/php/registro.php" method="POST" id="uform">
+							Usuario: <input type="text" name="usuario">
+							Clave: <input type="password" name="contra">
+							Nombre: <input type="text" name="nombre">
+							Pais: <input type="text" name="pais">
+							Ciudad: <input type="text" name="ciudad">
+							Telefono: <input type="text" name="numTelf">
+							Codigo Postal: <input type="text" name="codigopostal">
+							Direccion: <input type="text" name="direccion">
+							Email: <input type="text" name="email"><br>
+							<input type="submit" value="REGISTRAR">
+						</form>
+						
+					</div>
+			</div>
+</body>
+</html>
